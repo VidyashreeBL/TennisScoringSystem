@@ -8,6 +8,7 @@ public class TennisScoreCalculator {
 	private String playerScoreSequence;
 	private int player1TotalPoints;
 	private int player2TotalPoints;
+	private static String[] scoreMapping = ["love", "15", "30", "40", "game"];
 	public static char PLAYER_1_SYMBOL = 'D';
 	public static char PLAYER_2_SYMBOL = 'F';  
 	
@@ -15,9 +16,6 @@ public class TennisScoreCalculator {
 		playerScoreSequence = input;
 		player1TotalPoints = characterCount(PLAYER_1_SYMBOL);
 		player2TotalPoints = characterCount(PLAYER_2_SYMBOL);
-		
-				
-		
 	}
 	public void displayScores(){
 		
@@ -47,7 +45,7 @@ public class TennisScoreCalculator {
 	}
 	
 	private boolean isGameOver(){
-        return (Math.max(player1TotalPoints, player2TotalPoints) > 3 && Math.abs(player1TotalPoints - player2TotalPoints) >= 2 );
+        	return (Math.max(player1TotalPoints, player2TotalPoints) > 3 && Math.abs(player1TotalPoints - player2TotalPoints) >= 2 );
 	}
 	
 	
