@@ -2,6 +2,7 @@
  * Created by test on 7/27/2015.
  */
 import java.util.*;
+import java.lang.Math;
 
 public class TennisScoreCalculator {
 	private String playerScoreSequence;
@@ -39,8 +40,8 @@ public class TennisScoreCalculator {
 		
 	}
 	
-	private boolean isGameOver(String input){
-		return true;
+	private boolean isGameOver(){
+        return (Math.max(player1TotalPoints, player2TotalPoints) > 3 && Math.abs(player1TotalPoints - player2TotalPoints) >= 2 );
 	}
 	
 	
