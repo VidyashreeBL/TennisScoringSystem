@@ -27,5 +27,9 @@ public class TennisScoreCalculator {
 		
 	}
 	
+	private boolean isGameOver(String input){
+		
+	}
+	
 	
 }
