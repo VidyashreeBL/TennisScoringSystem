@@ -9,7 +9,7 @@ public class TennisScoreCalculator {
 	private int player1TotalPoints;
 	private int player2TotalPoints;
 	private static String[] scoreMapping = {"love", "15", "30", "40", "game"};
-	private static String[] scoreMapping = {"40", "ADV", "game"};
+	private static String[] deuceScoreMapping = {"40", "ADV", "game"};
 	private String player1Score;
 	private String player2Score;
 	public static char PLAYER_1_SYMBOL = 'D';
@@ -28,8 +28,8 @@ public class TennisScoreCalculator {
 		if (isDeuceEncountered(player1TotalPoints,player2TotalPoints)) {
 			int minScore = Math.min(player1TotalPoints, player2TotalPoints);
 			
-			player1Score = deuceMappingScore[player1TotalPoints - minScore];
-			player2Score = deuceMappingScore[player2TotalPoints - minScore];
+			player1Score = deuceScoreMapping[player1TotalPoints - minScore];
+			player2Score = deuceScoreMapping[player2TotalPoints - minScore];
 		}
 		else{
 			player1Score = scoreMapping[player1TotalPoints];
