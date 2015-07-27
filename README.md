@@ -10,6 +10,8 @@ TennisScoreCalculator
 1. playerScoreSequence: A sequence of letters representing, each represeting the player who won the corresponding point.
 2. PlayerOneTotalPoints: Total points scored by player one.
 3. PlayerTwoTotalPoints: Total points scored by player two.
+4. PLAYER_1_SYMBOL: A character representing the first player.
+5. PLAYER_2_SYMBOL: A character representing the second player.
 
 ##Methods
 
