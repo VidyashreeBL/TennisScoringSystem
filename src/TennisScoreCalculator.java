@@ -8,9 +8,15 @@ public class TennisScoreCalculator {
 	private String playerScoreSequence;
 	private int player1TotalPoints;
 	private int player2TotalPoints;
+	public static char PLAYER_1_SYMBOL = 'D';
+	public static char PLAYER_2_SYMBOL = 'F';  
 	
 	TennisScoreCalculator(String input){
 		playerScoreSequence = input;
+		player1TotalPoints = characterCount(PLAYER_1_SYMBOL);
+		player2TotalPoints = characterCount(PLAYER_2_SYMBOL);
+		
+				
 		
 	}
 	public void displayScores(){
