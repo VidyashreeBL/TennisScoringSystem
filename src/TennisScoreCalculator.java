@@ -8,7 +8,7 @@ public class TennisScoreCalculator {
 	private String playerScoreSequence;
 	private int player1TotalPoints;
 	private int player2TotalPoints;
-	private static String[] scoreMapping = ["love", "15", "30", "40", "game"];
+	private static String[] scoreMapping = {"love", "15", "30", "40", "game"};
 	public static char PLAYER_1_SYMBOL = 'D';
 	public static char PLAYER_2_SYMBOL = 'F';  
 	
