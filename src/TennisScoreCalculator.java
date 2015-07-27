@@ -29,13 +29,7 @@ private void calculateScores(){
 			
 		}
 		
-		if (Math.abs(player1TotalPoints - player2TotalPoints) == 2 )) {
-			System.out.println("Winner is : ");
-			int winner = Math.max(player1TotalPoints,player2TotalPoints);
-			System.out.println(winner);
-			
-		}
-		
+	
 	}
 
 	public void displayScores(){
