@@ -62,6 +62,14 @@ private void calculateScores(){
 	private boolean isGameOver(){
         	return (Math.max(player1TotalPoints, player2TotalPoints) > 3 && Math.abs(player1TotalPoints - player2TotalPoints) >= 2 );
 	}
+
+	public String getPlayer1Score(){
+		return player1Score;
+	}
+
+	public String getPlayer2Score(){
+		return player1Score;
+	}
 	
 	
 }
