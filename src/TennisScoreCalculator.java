@@ -9,6 +9,8 @@ public class TennisScoreCalculator {
 	private int player1TotalPoints;
 	private int player2TotalPoints;
 	private static String[] scoreMapping = {"love", "15", "30", "40", "game"};
+	private String player1Score;
+	private String player2Score;
 	public static char PLAYER_1_SYMBOL = 'D';
 	public static char PLAYER_2_SYMBOL = 'F';  
 	
@@ -17,6 +19,25 @@ public class TennisScoreCalculator {
 		player1TotalPoints = characterCount(PLAYER_1_SYMBOL);
 		player2TotalPoints = characterCount(PLAYER_2_SYMBOL);
 	}
+	
+private void calculateScores(){
+		
+		if (isDeuceEncountered(player1TotalPoints,player2TotalPoints)) {
+			
+			player1TotalPoints -= Math.min(player1TotalPoints,player2TotalPoints);
+			player2TotalPoints -= Math.min(player1TotalPoints,player2TotalPoints);	
+			
+		}
+		
+		if (Math.abs(player1TotalPoints - player2TotalPoints) == 2 )) {
+			System.out.println("Winner is : ");
+			int winner = Math.max(player1TotalPoints,player2TotalPoints);
+			System.out.println(winner);
+			
+		}
+		
+	}
+
 	public void displayScores(){
 		
 	}
