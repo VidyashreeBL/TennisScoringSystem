@@ -16,7 +16,7 @@ public class TennisScoreCalculator {
 	}
 	
 	private boolean isDeuceEncountered(int a,int b){
-		
+		return true;
 	}
 	
 	private int characterCount(char ch){
@@ -36,7 +36,7 @@ public class TennisScoreCalculator {
 	}
 	
 	private boolean isGameOver(String input){
-		
+		return true;
 	}
 	
 	
