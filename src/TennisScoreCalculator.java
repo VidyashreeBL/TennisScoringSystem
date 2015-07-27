@@ -56,10 +56,6 @@ public class TennisScoreCalculator {
     		}
     		return count;	
 	}
-	
-	public void setPlayerScoreSequence(String input){
-		playerScoreSequence = input;
-	}
 
 	public String getPlayer1Score() {
 		return player1Score;
