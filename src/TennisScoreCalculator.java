@@ -73,6 +73,12 @@ public class TennisScoreCalculator {
 		calculateScores();
 		System.out.println(PLAYER_1_SYMBOL + ": " + player1Score);
 		System.out.println(PLAYER_2_SYMBOL + ": " + player2Score);
+		if(winner != "None"){
+			System.out.println("Winner = " + winner);
+		}
+	}
+	public String getWinner(){
+		return winner;
 	}
 	
 	private void setWinner(){
