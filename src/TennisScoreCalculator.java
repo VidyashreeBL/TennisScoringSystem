@@ -37,7 +37,7 @@ public class TennisScoreCalculator {
 	}
 	
 	public void setPlayerScoreSequence(String input){
-		
+		playerScoreSequence = input;
 	}
 	
 	private boolean isGameOver(){
