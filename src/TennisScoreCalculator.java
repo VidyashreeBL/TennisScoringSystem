@@ -93,6 +93,9 @@ public class TennisScoreCalculator {
 	
 	public void updateScoreSeuence(char ch){
 		playerScoreSequence += ch;
-		showScoreboard();
+                player1TotalPoints = characterCount(PLAYER_1_SYMBOL);
+		player2TotalPoints = characterCount(PLAYER_2_SYMBOL);
+                determineWinner();
+                calculateScores();
 	}
 }
