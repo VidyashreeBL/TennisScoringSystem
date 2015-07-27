@@ -26,14 +26,23 @@ private void calculateScores(){
 			
 			player1TotalPoints -= Math.min(player1TotalPoints,player2TotalPoints);
 			player2TotalPoints -= Math.min(player1TotalPoints,player2TotalPoints);	
-			
+			if(player1TotalPoints == 0){
+				player1Score = "40";
+				player2Score = "Adv";
+			}
+			else{
+				player1Score = "Adv";
+				player2Score = "40";
+			}
 		}
-		
-	
+		else{
+			player1Score = scoreMapping[player1TotalPoints];
+			player2Score = scoreMapping[player2TotalPoints];
+		}
 	}
 
 	public void displayScores(){
-		
+		if(isDeuceEncountered)
 	}
 	
 	private boolean isDeuceEncountered(int a,int b){
