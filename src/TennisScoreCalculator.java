@@ -94,4 +94,9 @@ public class TennisScoreCalculator {
 			winner = "None";
 		}
 	}	
+	
+	public void updateScoreSeuence(char ch){
+		playerScoreSequence += ch;
+		showScoreboard();
+	}
 }
