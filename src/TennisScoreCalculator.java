@@ -19,20 +19,10 @@ public class TennisScoreCalculator {
 		playerScoreSequence = input;
 		player1TotalPoints = characterCount(PLAYER_1_SYMBOL);
 		player2TotalPoints = characterCount(PLAYER_2_SYMBOL);
-		if (Math.max(player1TotalPoints, player2TotalPoints) > 3 && Math.abs(player1TotalPoints - player2TotalPoints) >= 2 ){
-			if (player1TotalPoints > player2TotalPoints){
-				winner = "" + PLAYER_1_SYMBOL;
-			}
-			else {
-				winner = "" + PLAYER_2_SYMBOL;
-			}
-		}
-		else {
-			winner = "None";
-		}
+		setWinner();
 	}
 	
-private void calculateScores(){
+	private void calculateScores(){
 		
 		if (isDeuceEncountered(player1TotalPoints,player2TotalPoints)) {
 			
@@ -93,4 +83,17 @@ private void calculateScores(){
 		System.out.println(PLAYER_2_SYMBOL + ": " + player2Score);
 	}
 	
+	private void setWinner(){
+		if (Math.max(player1TotalPoints, player2TotalPoints) > 3 && Math.abs(player1TotalPoints - player2TotalPoints) >= 2 ){
+			if (player1TotalPoints > player2TotalPoints){
+				winner = "" + PLAYER_1_SYMBOL;
+			}
+			else {
+				winner = "" + PLAYER_2_SYMBOL;
+			}
+		}
+		else {
+			winner = "None";
+		}
+	}	
 }
