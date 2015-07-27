@@ -81,7 +81,7 @@ public class TennisScoreCalculator {
 		return winner;
 	}
 	
-	private void setWinner(){
+	private void determineWinner(){
 		if (Math.max(player1TotalPoints, player2TotalPoints) > 3 && Math.abs(player1TotalPoints - player2TotalPoints) >= 2 ){
 			if (player1TotalPoints > player2TotalPoints){
 				winner = "" + PLAYER_1_SYMBOL;
