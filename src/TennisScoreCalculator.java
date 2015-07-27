@@ -12,12 +12,24 @@ public class TennisScoreCalculator {
 	private String player1Score;
 	private String player2Score;
 	public static char PLAYER_1_SYMBOL = 'D';
-	public static char PLAYER_2_SYMBOL = 'F';  
+	public static char PLAYER_2_SYMBOL = 'F';
+	private String winner = "";
 	
 	TennisScoreCalculator(String input){
 		playerScoreSequence = input;
 		player1TotalPoints = characterCount(PLAYER_1_SYMBOL);
 		player2TotalPoints = characterCount(PLAYER_2_SYMBOL);
+		if (Math.max(player1TotalPoints, player2TotalPoints) > 3 && Math.abs(player1TotalPoints - player2TotalPoints) >= 2 ){
+			if (player1TotalPoints > player2TotalPoints){
+				winner = "" + PLAYER_1_SYMBOL;
+			}
+			else {
+				winner = "" + PLAYER_2_SYMBOL;
+			}
+		}
+		else {
+			winner = "None";
+		}
 	}
 	
 private void calculateScores(){
@@ -66,10 +78,6 @@ private void calculateScores(){
 	
 	public void setPlayerScoreSequence(String input){
 		playerScoreSequence = input;
-	}
-	
-	private boolean isGameOver() {
-        	return (Math.max(player1TotalPoints, player2TotalPoints) > 3 && Math.abs(player1TotalPoints - player2TotalPoints) >= 2 );
 	}
 
 	public String getPlayer1Score() {
