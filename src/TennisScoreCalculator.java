@@ -20,7 +20,15 @@ public class TennisScoreCalculator {
 	}
 	
 	private int characterCount(char ch){
-		
+		int count = 0;
+    		for (int i=0; i < playerScoreSequence.length(); i++)
+    		{
+        		if (playerScoreSequence.charAt(i) == ch)
+        		{
+             			count++;
+        		}
+    		}
+    		return count;	
 	}
 	
 	public void setPlayerScoreSequence(String input){
