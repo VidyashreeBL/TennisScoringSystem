@@ -12,6 +12,8 @@ TennisScoreCalculator
 3. PlayerTwoTotalPoints: Total points scored by player two.
 4. PLAYER_1_SYMBOL: A character representing the first player.
 5. PLAYER_2_SYMBOL: A character representing the second player.
+6. Player1Score: String representation of Player 1's score.
+7. Player2Score: String representation of Player 2's score.
 
 ##Methods
 

@@ -68,17 +68,21 @@ private void calculateScores(){
 		playerScoreSequence = input;
 	}
 	
-	private boolean isGameOver(){
+	private boolean isGameOver() {
         	return (Math.max(player1TotalPoints, player2TotalPoints) > 3 && Math.abs(player1TotalPoints - player2TotalPoints) >= 2 );
 	}
 
-	public String getPlayer1Score(){
+	public String getPlayer1Score() {
 		return player1Score;
 	}
 
-	public String getPlayer2Score(){
+	public String getPlayer2Score() {
 		return player1Score;
 	}
-	
+
+	public void showScoreboard() {
+		System.out.println(PLAYER_1_SYMBOL + ": " + player1Score);
+		System.out.println(PLAYER_2_SYMBOL + ": " + player2Score);
+	}
 	
 }
