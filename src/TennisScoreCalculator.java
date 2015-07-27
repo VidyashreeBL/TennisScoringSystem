@@ -9,6 +9,7 @@ public class TennisScoreCalculator {
 	private int player2TotalPoints;
 	
 	TennisScoreCalculator(String input){
+		playerScoreSequence = input;
 		
 	}
 	public void displayScores(){
