@@ -25,7 +25,7 @@ public class TennisScoreCalculator {
 	
 	private boolean isDeuceEncountered(int a,int b){
 		
-		if(a > 3 && b > 3)
+		if(a >= 3 && b >= 3)
 			return true;
 		return false;
 	}
