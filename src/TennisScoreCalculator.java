@@ -19,7 +19,8 @@ public class TennisScoreCalculator {
 	private boolean isDeuceEncountered(int a,int b){
 		
 		if(a > 3 && b > 3)
-		return true;
+			return true;
+		return false;
 	}
 	
 	private int characterCount(char ch){
