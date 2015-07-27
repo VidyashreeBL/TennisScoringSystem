@@ -20,7 +20,7 @@ public class TennisScoreCalculator {
 		playerScoreSequence = input;
 		player1TotalPoints = characterCount(PLAYER_1_SYMBOL);
 		player2TotalPoints = characterCount(PLAYER_2_SYMBOL);
-		setWinner();
+		determineWinner();
 	}
 	
 	private void calculateScores(){
