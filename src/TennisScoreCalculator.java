@@ -70,6 +70,7 @@ public class TennisScoreCalculator {
 	}
 
 	public void showScoreboard() {
+		calculateScores();
 		System.out.println(PLAYER_1_SYMBOL + ": " + player1Score);
 		System.out.println(PLAYER_2_SYMBOL + ": " + player2Score);
 	}
